@@ -1,4 +1,5 @@
 import './App.css';
+import LoadingSpinner from "./loadingSpinner";
 
 function App() {
   return (

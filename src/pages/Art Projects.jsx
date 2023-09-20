@@ -1,14 +1,14 @@
 import react from "react";
-const About = () => {
+const ArtProjects = () => {
     return(
         <div>
             <h1>
-                About Us
+                Art Projects
             </h1>
             <p>
-                Justine Anderson and I am a programmer
+                This is where I will post my art projects
             </p>
         </div>
     );
 }
-export default About;
+export default ArtProjects;

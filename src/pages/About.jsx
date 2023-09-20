@@ -11,4 +11,4 @@ const about = () => {
         </div>
     );
 }
-export default home;
+export default about;

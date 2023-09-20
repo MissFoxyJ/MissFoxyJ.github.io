@@ -1,45 +1,27 @@
 import './App.css';
 import LoadingSpinner from "./loadingSpinner";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Layout from './pages/Layout';
+import home from './pages/Home';
+import about from './pages/About';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <LoadingSpinner />
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout/>}>
+              <Route index element={<Home />} />
+              <Route path="about" element={<About />} />
+            </Route>
+          </Routes>
+        
+        </BrowserRouter>
       </header>
     </div>
   );
 }
 
 export default App;
-
-
-function AboutPage(){
-  return(
-    <div>
-      <h1>
-        About Us
-      </h1>
-      <p>
-        Justine Anderson and I am a programmer
-      </p>
-    </div>
-  )
-}

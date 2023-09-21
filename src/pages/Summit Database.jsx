@@ -1,4 +1,3 @@
-import react from "react";
 const SummitDatabase = () => {
     return(
         <div>

@@ -1,5 +1,4 @@
-import react from "react";
-const SummitWeb = () => {
+const SummitFrontend = () => {
     return(
         <div>
             <h1>
@@ -11,4 +10,4 @@ const SummitWeb = () => {
         </div>
     );
 }
-export default SummitWeb;
+export default SummitFrontend;

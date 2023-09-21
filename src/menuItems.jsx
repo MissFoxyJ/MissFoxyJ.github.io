@@ -15,21 +15,31 @@ export const menuItems = [
           submenu: [
             {
               title: 'Frontend',
-              url: 'Frontend'
+              url: 'Summit Frontend'
             },
             {
               title: 'Backend',
-              url: 'Backend'
+              url: 'Summit Backend'
             },
             {
               title: 'Database',
-              url: 'Database'
+              url: 'Summit Database'
             },
           ]
         },
         {
           title: 'Art',
           url:'Art',
+          submenu:[
+            {
+              title: 'Art Projects',
+              url: 'Art Projects'
+            },
+            {
+              title: 'Website',
+              url: 'Personal Website'
+            }
+          ]
         },
       ]
     },
